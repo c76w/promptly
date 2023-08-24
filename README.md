@@ -39,7 +39,7 @@ To run this project, you will need to add the following environment variables to
 
 ## Deployment
 
-First, clone the repositiry and then run: 
+First, clone the repository and then run: 
 
 ```bash
 npm install
