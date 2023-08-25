@@ -18,10 +18,6 @@ const RootLayout = ({ children }) => {
 			</head>
 			<body>
 				<Provider>
-					{/* <div className='main'>
-						<div className='bg' />
-					</div> */}
-
 					<main className='app'>
 						<Nav />
 						{children}
