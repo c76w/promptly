@@ -1,6 +1,7 @@
 import '@styles/globals.css';
 import Nav from '@components/Nav';
 import Provider from '@components/Provider';
+import Head from 'next/head';
 
 export const metadata = {
 	title: 'Promptly',
@@ -10,12 +11,12 @@ export const metadata = {
 const RootLayout = ({ children }) => {
 	return (
 		<html lang='en'>
-			<head>
+			<Head>
 				<link
 					rel='icon'
 					href='/favicon.ico'
 				/>
-			</head>
+			</Head>
 			<body>
 				<Provider>
 					<main className='app'>
