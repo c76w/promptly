@@ -7,9 +7,18 @@ import Profile from '@components/Profile';
 
 const MyProfile = () => {
 	const router = useRouter();
-	const { data: session } = useSession();
-
+	const { data: session, status } = useSession();
 	const [posts, setPosts] = useState([]);
+
+	useEffect(() => {
+		const checkForUser = async () => {
+			if (status === 'unauthenticated') {
+				return router.push(`/`);
+			}
+		};
+
+		checkForUser();
+	}, [status]);
 
 	useEffect(() => {
 		const fetchPosts = async () => {

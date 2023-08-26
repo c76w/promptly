@@ -36,7 +36,11 @@ const Feed = () => {
 	};
 
 	useEffect(() => {
-		fetchPosts();
+		try {
+			fetchPosts();
+		} catch (error) {
+			console.error(error);
+		}
 	}, []);
 
 	const filterPrompts = (typedSearch) => {
