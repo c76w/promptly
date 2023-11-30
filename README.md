@@ -3,6 +3,8 @@
 
 Promptly is an open-source AI prompting tool for the modern world to discover, create and share creative AI prompts. Made with NextJS, NextAuth & MongoDB
 
+## Link to website
+<a href="https://promptly-ten.vercel.app/" target="_blank">Visit the live website here</a>
 
 ## Features
 
